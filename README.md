@@ -10,11 +10,11 @@ You should already have a working Homestead Vagrant installation on your system.
 
 ### Installing
 
-Copy serve-multisite-subdomains.sh and serve-multisite-subdirectories.sh into the scripts folder of your Homestead repo.
+Copy serve-multisite-subdomains.sh and serve-multisite-subdirectories.sh into the scripts/site-types folder of your Homestead repo.
 
 ```
-homestead/scripts/serve-multisite-subdomains.sh
-homestead/scripts/serve-multisite-subdirectories.sh
+homestead/scripts/site-types/wordpress-multisite-subdomains.sh
+homestead/scripts/site-types/wordpress-multisite-subdirectories.sh
 ```
 
 ## Configuration
@@ -24,10 +24,10 @@ In your Homestead.yaml add a type parameter to your site using the desired multi
 ```
 - map: subdomains-example.test
   to: /home/vagrant/code/subdomains-example
-  type: multisite-subdomains
+  type: wordpress-multisite-subdomains
 - map: subdirectories-example.test
   to: /home/vagrant/code/subdirectories-example
-  type: multisite-subdirectories
+  type: wordpress-multisite-subdirectories
 ```
 
 ## Deployment
