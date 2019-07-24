@@ -1,6 +1,6 @@
 # Homestead WordPress Multisite Nginx Configuration
 
-A default Nginx template that can be used for a subdirectory WordPress Multisite. 
+Nginx templates that handle WordPress Multisite URLs correctly in Homestead. 
 
 ### Prerequisites
 
@@ -10,7 +10,7 @@ You should already have a working Homestead Vagrant installation on your system.
 
 ### Installing
 
-Copy serve-multisite-subdomains.sh and serve-multisite-subdirectories.sh into the scripts/site-types folder of your Homestead repo.
+Copy wordpress-multisite-sub-domains.sh and wordpress-multisite-sub-directories.sh into the scripts/site-types folder of your Homestead folder.
 
 ```
 homestead/scripts/site-types/wordpress-multisite-sub-domains.sh
